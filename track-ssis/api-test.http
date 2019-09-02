@@ -1,0 +1,68 @@
+### 简历详情查询
+POST http://tob-resume-service.ifchange.com/rest/
+Content-Type: application/json
+
+{
+  "header": {
+    "appId": "31082108212",
+    "ip": "192.168.0.2"
+  },
+  "request": {
+    "c": "resumeDetail",
+    "m": "listDetailByIds",
+    "p": {
+      "tobResumeIds": [
+        1226842202272051233
+      ]
+    }
+  }
+}
+
+### 写入 TRACK 数据
+POST http://localhost:20008
+Content-Type: application/json
+
+{
+  "header": {
+    "appId": "31082108212",
+    "ip": "127.0.1.1"
+  },
+  "request": {
+    "c": "/track/operate",
+    "m": "/data/create",
+    "p": {
+      "operatorAt": "20190612101716",
+      "topId": 81,
+      "kinds": [
+        "recruiment_update"
+      ],
+      "detail": {
+        "position_recruiment": {
+          "recruiment_cooperation_uids": "",
+          "recruiment_end_time": "2019-06-28",
+          "recruiment_num": 5,
+          "top_id": 81,
+          "updated_at_origin": "2019-06-12 10:17:16",
+          "created_at": 1559051300,
+          "recruiment_real_end_time": "0000-00-00",
+          "recruiment_responsible_uid": 94468,
+          "recruiment_type_id": 7,
+          "created_at_origin": "2019-05-28 21:48:20",
+          "recruiment_start_time": "2019-05-01",
+          "uid": 81,
+          "updated_at": 1560305836,
+          "organization": 1583,
+          "recruiment_id": 20,
+          "recruiment_name": "LLF测试用招聘计划",
+          "status": 0
+        }
+      },
+      "operatorId": 81
+    }
+  }
+}
+
+### 清洗简历数据
+POST http://192.168.2.184:20008/track/operate/sterilize/81/resume
+
+###
