@@ -40,7 +40,7 @@
         <reflections.version>0.9.10</reflections.version>
 
         <!--json xml guava http commons-->
-        <fastjson.version>1.2.25</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <dom4j.version>1.6.1</dom4j.version>
         <guava.version>23.0</guava.version>
         <okhttp.version>3.13.1</okhttp.version>
