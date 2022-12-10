@@ -15,7 +15,7 @@
         <project.build.encoding>UTF-8</project.build.encoding>
 
         <springboot.starter.version>2.0.0.RELEASE</springboot.starter.version>
-        <spring.version>5.0.4.RELEASE</spring.version>
+        <spring.version>6.0.0</spring.version>
         <freemarker.version>2.3.23</freemarker.version>
 
         <!--mysql hikariCP-->
